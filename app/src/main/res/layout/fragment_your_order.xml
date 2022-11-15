@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.BurgerFragment"
+    android:background="@color/fris_light_pink"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yourOrderH1_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dinBestilling"
+        android:textSize="@dimen/h1"
+        android:fontFamily="@font/abrilfatface_regular"
+        android:textColor="@color/fris_dark_pink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/yourOrders_recyclerview"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/yourOrders_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        app:layout_constraintBottom_toTopOf="@id/bestille_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/yourOrderH1_textView"
+        android:padding="@dimen/_20sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bestille_button"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="@string/betale"
+        android:textAlignment="center"
+        android:textSize="@dimen/h3"
+        android:textColor="@color/fris_light_pink"
+        android:textAllCaps="false"
+        android:fontFamily="@font/abrilfatface_regular"
+        app:layout_constraintTop_toBottomOf="@id/yourOrders_recyclerview"
+        app:layout_constraintBottom_toTopOf="@id/backArrowYourOrder_imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/rounded_button"/>
+
+    <ImageView
+        android:id="@+id/backArrowYourOrder_imageView"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/back_arrow"
+        android:layout_marginBottom="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bestille_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

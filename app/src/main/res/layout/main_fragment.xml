@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="@color/fris_light_pink"
+    tools:context=".ui.main.MainFragment">
+
+    <ImageView
+        android:id="@+id/scrape_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/menu_closed"
+        app:layout_constraintBottom_toTopOf="@+id/h1_hundredpercent_TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/h1_hundredpercent_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+
+        android:fontFamily="@font/sueellenfrancisco_regular"
+        android:text="@string/hundredpercent"
+        android:textAllCaps="true"
+        android:textColor="@color/fris_blue"
+        android:textFontWeight="700"
+
+        android:textSize="@dimen/h1"
+        app:layout_constraintBottom_toTopOf="@id/matallergener_TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scrape_imageView" />
+
+    <TextView
+        android:id="@+id/matallergener_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/sueellenfrancisco_regular"
+
+        android:text="@string/matallargener"
+        android:textAllCaps="true"
+        android:textColor="@color/fris_pink"
+        android:textSize="@dimen/h4"
+        android:textFontWeight="600"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h1_hundredpercent_TextView" />
+
+    <TextView
+        android:id="@+id/h2_hundredpercent_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_70sdp"
+        android:fontFamily="@font/sueellenfrancisco_regular"
+
+        android:text="@string/hundredpercent"
+        android:textAllCaps="true"
+        android:textColor="@color/fris_blue"
+        android:textSize="@dimen/h1"
+        android:textFontWeight="700"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/matallergener_TextView" />
+
+    <TextView
+        android:id="@+id/vegansk_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/sueellenfrancisco_regular"
+        android:text="@string/vegansk"
+        android:textAllCaps="true"
+        android:textColor="@color/fris_pink"
+        android:textSize="@dimen/h4"
+        android:textFontWeight="600"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/h2_hundredpercent_TextView" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/vegansk_TextView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/dairyFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_7" />
+
+            <ImageView
+                android:id="@+id/nutFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_6" />
+
+            <ImageView
+                android:id="@+id/soyFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/eggFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_4" />
+
+            <ImageView
+                android:id="@+id/sesameFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_3" />
+
+            <ImageView
+                android:id="@+id/glutenFree_ImageView"
+                android:layout_width="@dimen/table_imageViews"
+                android:layout_height="@dimen/table_imageViews"
+                android:paddingRight="@dimen/table_paddingRight"
+                android:paddingLeft="@dimen/table_paddingRight"
+                android:src="@drawable/icon_2" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

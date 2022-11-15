@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Tema4</string>
+
+    //LANDING PAGE
+    <string name="hundredpercent">100%</string>
+    <string name="matallargener">fri for matallergener</string>
+    <string name="vegansk">vegansk</string>
+
+    //BURGER MENY
+    <string name="meny">meny</string>
+    <string name="bestille">bestille</string>
+    <string name="kontakt">kontakt</string>
+    <string name="nyhet">nyhet</string>
+
+    //MENU
+    <string name="alt1">ice cream rolls (60kr)</string>
+    <string name="alt2">shakes (50kr)</string>
+    <string name="alt3">kaffe (30kr)</string>
+
+    <string name="alt1_1">1. velg smak</string>
+    <string name="smak1">vanilje</string>
+    <string name="smak2">jordbær</string>
+    <string name="smak3">sjokolade</string>
+    <string name="alt1_2">2. velg tilsetning</string>
+    <string name="brownies">brownies</string>
+    <string name="oreobiter">oreobiter</string>
+    <string name="sjokoladebiter">sjokoladebiter</string>
+    <string name="marshmellows">marshmellows</string>
+
+    <string name="alt1_3">3. velg topping</string>
+    <string name="kaktepynt">kakepynt</string>
+    <string name="kokosflak">kokosflak</string>
+    <string name="sjokolade">sjokolade</string>
+    <string name="fersk_frukt">fersk frukt</string>
+
+    <string name="velg_smak">velg smak</string>
+    <string name="velg_type">velg type</string>
+
+    <string name="filter">filter</string>
+    <string name="cortado">cortado</string>
+    <string name="espresso">espresso</string>
+
+    //CONTACT
+    <string name="contact">vi pleier å være på rådhusplassen fra 13:00 til 21:00 men sjekk</string>
+    <string name="HER">HER</string>
+    <string name="contactTwo">hvor vi er denne uken</string>
+
+    //ORDER
+    <string name="urWelcome">VÆR SÅ GOD!</string>
+    <string name="is">is</string>
+    <string name="shakes">shakes</string>
+    <string name="kaffe">kaffe</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+    //YOUR ORDER
+    <string name="dinBestilling">din bestilling</string>
+    <string name="dinIs">Ice Cream Roll</string>
+    <string name="dinShake">Shake</string>
+    <string name="dinKaffe">Kaffe</string>
+    <string name="explanationOrder">Hvordan is vil du ha? Ta kontakt med betjeningen når du skal hente bestillingen.</string>
+    <string name="betale">betale</string>
+
+    //NEWS
+    <string name="femtetilniende">fra 5. august til 9. august er vi på</string>
+    <string name="oya">Øya Festivalen</string>
+
+    //DIV
+    <string name="IceScraper">IceScraper</string>
+    <string name="placeholder">placeholder</string>
+    <string name="placeholderNumber">0</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="channel_name">CHANNEL_1</string>
+    <string name="channel_description">Frys Ice Cream Rolls</string>
+
+</resources>

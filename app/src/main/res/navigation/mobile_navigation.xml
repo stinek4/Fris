@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.tema4.ui.main.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_frommainFragmenttoBurger1Fragment2"
+            app:destination="@id/burger1Fragment2"
+            app:enterAnim="@animator/nav_default_enter_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/burger1Fragment2"
+        android:name="com.example.tema4.ui.main.BurgerFragment"
+        android:label="fragment_burger1"
+        tools:layout="@layout/fragment_burger" >
+        <action
+            android:id="@+id/action_backScraperfromBurger"
+            app:destination="@id/mainFragment"
+            app:exitAnim="@animator/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_burger1Fragment2_to_carteFragment"
+            app:destination="@id/carteFragment" />
+        <action
+            android:id="@+id/action_burger1Fragment2_to_contactFragment1"
+            app:destination="@id/contactFragment1" />
+        <action
+            android:id="@+id/action_burger1Fragment2_to_orderFragment2"
+            app:destination="@id/orderFragment" />
+        <action
+            android:id="@+id/action_burger1Fragment2_to_newsFragment"
+            app:destination="@id/newsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/carteFragment"
+        android:name="com.example.tema4.ui.main.CarteFragment"
+        android:label="fragment_carte"
+        tools:layout="@layout/fragment_carte" >
+        <action
+            android:id="@+id/action_carteFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/orderFragment"
+        android:name="com.example.tema4.ui.main.order.OrderFragment"
+        android:label="fragment_order"
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_orderFragment_to_burger1Fragment2"
+            app:destination="@id/burger1Fragment2" />
+        <action
+            android:id="@+id/action_orderFragment_to_yourOrderFragment"
+            app:destination="@id/yourOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/contactFragment1"
+        android:name="com.example.tema4.ui.main.ContactFragment"
+        android:label="fragment_contact1"
+        tools:layout="@layout/fragment_contact" >
+        <action
+            android:id="@+id/action_contactFragment1_to_mainFragment"
+            app:destination="@id/burger1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsFragment"
+        android:name="com.example.tema4.ui.main.NewsFragment"
+        android:label="fragment_news"
+        tools:layout="@layout/fragment_news" >
+        <action
+            android:id="@+id/action_newsFragment_to_burgerFragment"
+            app:destination="@id/burger1Fragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/yourOrderFragment"
+        android:name="com.example.tema4.ui.main.order.YourOrderFragment"
+        android:label="fragment_your_order"
+        tools:layout="@layout/fragment_your_order" >
+        <action
+            android:id="@+id/action_yourOrderFragment_to_orderFragment"
+            app:destination="@id/orderFragment" />
+    </fragment>
+</navigation>

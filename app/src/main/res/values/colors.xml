@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fris_blue">#a3cfd8</color>
+    <color name="fris_pink">#e19fb8</color>
+    <color name="fris_dark_pink">#d6738b</color>
+    <color name="fris_white">#fcf9f1</color>
+    <color name="fris_light_pink">#f1dbdf</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

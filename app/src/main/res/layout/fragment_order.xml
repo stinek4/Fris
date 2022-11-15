@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.main.order.OrderFragment"
+        android:background="@color/fris_light_pink"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/urWelcome_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sueellenfrancisco_regular"
+            android:text="@string/urWelcome"
+            android:textColor="@color/fris_blue"
+            android:textSize="@dimen/h1"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <ImageView
+            android:id="@+id/is_imageView"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:src="@drawable/icon_19"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/is_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/is"
+            android:fontFamily="@font/abrilfatface_regular"
+            android:textSize="@dimen/h4"
+            android:gravity="center"
+            android:textColor="@color/fris_dark_pink"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/shakes_imageView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_90sdp"
+            android:src="@drawable/icon_16"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/shakes_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shakes"
+            android:fontFamily="@font/abrilfatface_regular"
+            android:textSize="@dimen/h4"
+            android:gravity="center"
+            android:textColor="@color/fris_dark_pink"
+            android:layout_marginBottom="@dimen/_10sdp"/>
+
+        <ImageView
+            android:id="@+id/kaffe_imageView"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/icon_9" />
+
+    <TextView
+        android:id="@+id/kaffe_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/kaffe"
+        android:fontFamily="@font/abrilfatface_regular"
+        android:textSize="@dimen/h4"
+        android:gravity="center"
+        android:textColor="@color/fris_dark_pink"
+        android:layout_marginBottom="@dimen/_50sdp"/>
+
+        <ImageView
+            android:id="@+id/backArrowOrder_imageView"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/back_arrow"
+            android:layout_marginBottom="@dimen/_50sdp"/>
+
+
+    </LinearLayout>
+

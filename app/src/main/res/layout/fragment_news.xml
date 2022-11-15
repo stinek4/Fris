@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.NewsFragment"
+    android:background="@color/fris_light_pink">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/abrilfatface_regular"
+            android:gravity="center"
+            android:text="@string/femtetilniende"
+            android:textColor="@color/fris_dark_pink"
+            android:textSize="@dimen/h2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:fontFamily="@font/sueellenfrancisco_regular"
+            android:gravity="center"
+            android:text="@string/oya"
+            android:textAllCaps="true"
+            android:textColor="@color/fris_blue"
+            android:textSize="@dimen/h1" />
+
+        <ImageView
+            android:id="@+id/backArrowNews_imageView"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_arrow" />
+
+    </LinearLayout>
+
+</FrameLayout>

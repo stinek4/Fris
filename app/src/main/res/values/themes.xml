@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        //COLORS
+        <item name="colorPrimary">@color/fris_pink</item>
+        <item name="colorPrimaryVariant">@color/fris_light_pink</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/fris_blue</item>
+        <item name="colorSecondaryVariant">@color/fris_white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        //COLOR Status bar
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        //Theme fonts
+        <item name="android:textViewStyle">@style/SueEllenFransiscoTextViewStyle</item>
+        <item name="buttonStyle">@style/AbrilFatfaceTextViewStyle</item>
+    </style>
+
+    //FONTS
+    <style name="SueEllenFransiscoTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">regular</item>
+    </style>
+    <style name="AbrilFatfaceTextViewStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">regular</item>
+    </style>
+
+    //NO ACTION BAR
+    <style name="Theme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    //LAUNCHER
+    <style name="Theme.Launcher">
+     <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <style name="Theme.Kont_boligsøk.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Kont_boligsøk.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
